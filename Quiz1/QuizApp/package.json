@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "db:create": "createdb --echo CluckrData",
+    "db:drop": "dropdb --echo CluckrData"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
