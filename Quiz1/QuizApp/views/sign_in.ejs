@@ -1,0 +1,28 @@
+<%- include('./partials/header') %>
+<% if (username) { %>
+      <span class="navbar-text text-dark">
+      <%= username %>
+      </span> 
+      <form class="form-inline ml-4" action="/sign_out" method="POST">
+        <button class="btn btn-outline-dark" type="submit">Sign Out</button>
+      </form>
+      
+    <% } else { %>
+    
+      <form class="form-inline" action="/sign_in" method="POST">
+      <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      <label for="Username">Username</label>
+      <input class="form-control mr-sm-2" name="username" placeholder="eg.Madam Welminster">
+    
+      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Sign In</button>
+      
+    <% } %>
+  
+<%- include('./partials/footer') %>
+
+
+    
+
+
+

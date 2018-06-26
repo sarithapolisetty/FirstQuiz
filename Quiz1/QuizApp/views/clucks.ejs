@@ -1,0 +1,28 @@
+<%- include("./partials/header") %>
+
+<form action="/clucks" method="POST">
+  <h4>content</h4>
+  <div class="form-group">
+    <textarea
+      name="content"
+      cols="60" rows="8"
+      class="form-control"
+      placeholder="Whatchoo cluckin' 'bout?"></textarea>
+  </div>
+  <h4>image_url</h4>
+  <div class="form-group">
+  <img src="/images/panda.jpg" style="width:304px; height:228px">
+    <input
+      type="string"
+      class="form-control"
+      name="image_url"
+      placeholder="e.g. http://imgur.com/myPic.jpg"
+    />
+  </div>
+  <input type="submit" class="btn btn-outline-primary" value="cluck!">
+</form>
+
+<%- include("./partials/footer") %>
+
+
+
